@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class = "no-js lt-ie9 lt-ie8 lt-ie7"></html>
+<![endif]-->
+<!--[if IE 7]>
+<html class = "no-js lt-ie9 lt-ie8"></html>
+<![endif]-->
+<!--[if lte IE 7]>
+<script src = "/js/lte-ie7.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+<html class = "no-js lt-ie9"></html>
+<![endif]-->
+<!--[if lte IE 8]>
+<html class = "no-js lt-ie9 lt-ie8 lt-ie7"></html>
+<![endif]-->
+<!--[if gt IE 8]>
+<html class = "no-js"></html>
+<![endif]-->
+<head>
+	<meta charset = "utf-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<title>YYCJs: Modern Front-End Frameworks</title>
+	<meta name = "description" content = "Modern Front-End Frameworks Presentation by Sean Goresht">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<script src = "js/modernizr.custom.min.js"></script>
+	<link href = "http://fonts.googleapis.com/css?family=Lato:300,400|Roboto:400,300" rel = "stylesheet">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "//cdn.jsdelivr.net/codemirror/3.14.0/codemirror.css">
+</head>
+<body>
+<div class = "container">
+	<div id = "content">
+		<nav class = "controls toolbar">
+			<button title = "Previous Slide" class = "btn show-prev"><i class = "icon-arrow-left"></i></button>
+			<button title = "Next Slide" class = "btn show-next"><i class = "icon-arrow-right"></i></button>
+		</nav>
+		<article id = "jmpress">
+			<section id = "welcome" class = "slide toggle-controls">
+				<header class = "intro">
+					<h1 class = "title">Modern Front-End Frameworks</h1>
+
+					<h2 class = "subtitle description type">Why you should <em>stop</em> using Twitter Bootstrap</h2>
+				</header>
+				<h4>How can I learn to write better CSS?
+					<button id = "start" class = "btn btn-primary start-show">Learn <i class = "icon-arrow-right"></i></button>
+				</h4>
+				<footer>
+					<aside>
+						<small>Web by <strong><a href = "http://seangoresht.com" target = "_blank">Sean
+							Goresht </a></strong><a href = "https://github.com/srsgores/learning-yeoman" target = "_blank">Fork this
+							on GitHub <i class = "icon-github-2"></i></a></small>
+					</aside>
+				</footer>
+			</section>
+			<section id = "intro" data-y = "-4500" data-x = "3500" data-z = "5000" data-duration = "11000" class = "slide toggle-controls">
+			<header>
+				<h1>Hi there<i class = "icon-happy full-icon"></i></h1>
+			</header>
+			<section id = "about-me" data-x = "2000" data-z = "1000" class = "slide">
+				<header>
+					<h1>About Me</h1>
+				</header>
+				<ul>
+					<li>I go to U of C</li>
+					<li>I write code for a design agency -<a href = "http://mantaraycreative.com" target = "_blank">Mantaray
+						Creative</a></li>
+					<li>I am front-end</li>
+					<li>Been using Express and Node for about 1 year</li>
+					<li>Some of you may recognize me</li>
+					<li>I like the newest stuff...</li>
+				</ul>
+			</section>
+			<section id = "the-plan" data-x = "2000" data-z = "500" data-y = "1000" class = "slide">
+				<header>
+					<h1>The Plan</h1>
+				</header>
+				<ol>
+					<li>Why Bootstrap sucks</li>
+					<ol>
+						<li><strong>littered</strong> with <code>px</code></li>
+						<li>Unsemantic</li>
+						<li>Fixed width <sup>(for the most part)</sup></li>
+						<li>Not completely customizable <sup>(does not use variables throughout)</sup></li>
+					</ol>
+					<li>CSS Preprocessor review</li>
+					<li>Qualities of a good front-end framework</li>
+					<li>The SASS Boilerplate Generator</li>
+					<li>Bootstrap Alternatives</li>
+					<li>Questions</li>
+				</ol>
+			</section>
+			<section id = "bootstrap-sucks" data-x = "2000" data-z = "-500" data-y = "1000" class = "slide">
+				<header>
+					<h1>Bootstrap Sucks!</h1>
+				</header>
+				<i class = "icon-sad full-icon"></i>
+			</section>
+			<section id = "littered-with-px" data-x = "3500" data-z = "-500" data-y = "1000" class = "slide">
+				<header>
+					<h1><code>px</code> Are Everywhere!</h1>
+				</header>
+				<p>Advanced front-end developers all agree that <code>px</code> should no longer be used
+					<strong>at all</strong>.</p>
+
+				<p><code>em</code> are better, work in IE7+</p>
+
+				<p>Bootstrap 3 thinks using a mixin to convert to <code>em</code>
+					<s title="Using a mixin is not a solution!">is a good solution</s> <sup>no, it's not!</sup></p>
+				<p><code>rem</code> suck because they can't be used in IE7.  No, Bootstrap, no!</p>
+				<section id = "why-use-em" data-x = "3500" data-z = "-1000" data-y = "2000" data-scale = "1.5" data-rotate = "180" class = "slide">
+					<header>
+						<h1><code>em</code> > <code>px</code></h1>
+					</header>
+					<ul>
+						<li>Allow resizing in IE</li>
+						<li>Supported in IE 7+</li>
+						<li><a href = "http://tympanus.net/codrops/2013/11/19/techniques-for-responsive-typography/" target = "_blank">Can be scaled more easily</a></li>
+						<li>Adjust properly on mobile devices</li>
+						<li>Get you thinking in units -- in relative units</li>
+						<li><strong>**Don't suck</strong></li>
+					</ul>
+				</section>
+			</section>
+			<section id = "some-pretext" data-x = "4500" data-z = "-800" data-y = "200" class = "slide">
+				<header>
+					<h1>I Tried to Fix It</h1>
+				</header>
+				<p>I filed an issue
+					<a href = "https://github.com/twbs/bootstrap/issues/7303" target = "_blank" title = "Pixel Issue on Bootstrap Github">on GitHub <i class="icon-github"></i></a></p>
+
+				<blockquote>
+					Bootstrap is not littered with pixel units—it's the unit of choice in the framework. Opinions aside, it is still very much how folks are building on the web today—desktop or mobile.  Not everything needs a variable. Folks seem dead-set on them, but I'm not so convinced.
+					<cite>@mdo - Bootstrap Creator</cite>
+				</blockquote>
+			</section>
+			<section id = "em-is-better" data-x = "4500" data-z = "-500" data-y = "2000" data-rotate = "35" class = "slide">
+				<header>
+					<h1>But are <code>px</code> Really That Bad?</h1>
+				</header>
+				<p>Umm...
+					<small>kind of.</small>
+				</p>
+				<p>Pixels have always been needed for computer applications... <small>until now</small></p>
+
+				<p><code>em</code> are device-agnostic, and have replaced <code>px</code></p>
+				<section id = "there-are-alot-of-unit-alternatives" data-x = "4500" data-z = "-1200" data-y = "2000" data-rotate = "80" data-scale = "1.4" class = "slide">
+					<header>
+						<h1>Unit Alternatives</h1>
+					</header>
+					<p>There are alternatives...<strong>absolutely</strong></p>
+					<ul>
+						<li><code>%</code> - Percentages</li>
+						<li><code>rem</code> - Sketchy support, with
+							<a href = "https://github.com/chuckcarpenter/REM-unit-polyfill" target = "_blank">a polyfill to <code>px</code></a></li>
+						<li><code>vm</code>, <code>vh</code>, <code>vmin</code> - sketchy support (<a href = "https://github.com/saabi/vminpoly" target = "_blank">but there is a janky polyfill)</a></li>
+						<li><code>pt</code> - only used in print</li>
+						<li><code>cm</code> - only used in print</li>
+						<li><code>mm</code> - only used in print</li>
+						<li><code>in</code> - only used in print</li>
+					</ul>
+					<footer>
+						<p><strong>Just stop using <code>px</code>!</strong></p>
+					</footer>
+				</section>
+			</section>
+			<section id = "unsemantic-bootstrap" data-x = "4500" data-z = "-1500" data-y = "2000" data-rotate = "35" class = "slide">
+				<header>
+					<h1>Bootstrap is Unsemantic</h1>
+				</header>
+				<p>It's <em>technical debt</em> - <a href = "https://coderwall.com/p/wixovg" target = "_blank">This article	explains it very well</a></p>
+
+				<p><strong>Remember MVC?</strong>  We need a loosely-coupled model and view</p>
+			</section>
+			<section id = "css-preprocessor-review" data-x = "4500" data-z = "-3500" data-y = "2000" data-rotate = "90" class = "slide">
+				<header>
+					<h1>Preprocessor Review <i class = "icon-hand-right full-icon"></i></h1>
+				</header>
+				<section id = "preprocessors" data-x = "4500" data-z = "-2500" data-y = "2000" data-rotate = "90" class =
+						"slide">
+					<header>
+						<h1>Preprocessors</h1>
+					</header>
+					<p>3 preprocessors:</p>
+					<ul>
+						<li>SASS</li>
+						<li>LESS</li>
+						<li>Stylus</li>
+					</ul>
+					<section id = "why-preprocessors" data-x = "4500" data-z = "-6000" data-y = "2000" data-rotate = "300" class = "slide">
+						<header>
+							<h1>Nested Selectors</h1>
+						</header>
+						<i style = "font-size: 15em;" class = "icon-repeat full-icon"></i>
+						<section id="nested-selectors" class="slide" data-x = "5500" data-z = "-6000" data-y = "2000" data-rotate = "300">
+							<header>
+								<h1>Nested Selectors in SASS</h1>
+							</header>
+							<div id = "live-code-nested-selectors"></div>
+						</section>
+						<section id="extends" class="slide" data-x = "6500" data-z = "-6000" data-y = "2000" data-rotate = "300">
+							<header>
+								<h1><code>@extends</code> Directive</h1>
+							</header>
+							<div id = "live-code-extends"></div>
+						</section>
+					</section>
+				</section>
+				<section id = "extends-support" data-x = "5500" data-z = "-5000" data-y = "2000" data-rotate = "90" class ="slide">
+					<header>
+						<h1><code>@extends</code> Support</h1>
+					</header>
+					<ul>
+						<li>SASS: <strong><i class="icon-checkmark-circle"></i></strong> - <code>@extends</code></li>
+						<li>LESS: <strong><i class="icon-checkmark-circle"></i></strong> - <code>&:extends([class])</code></li>
+						<li>Stylus: <strong><i class="icon-checkmark-circle"></i></strong> - <code>extends</code></li>
+					</ul>
+					<section id = "start-using-extends" data-x = "4500" data-z = "-6000" data-y = "2000" data-rotate = "90" class = "slide">
+						<header>
+							<h1>You Have No Excuse!</h1>
+						</header>
+						<i style = "font-size: 15em;" class = "icon-legal full-icon"></i>
+					</section>
+				</section>
+			</section>
+			<section id = "good-frontend-qualities" data-x = "8500" data-z = "-4000" data-y = "2000" data-rotate =
+					"35" class ="slide">
+				<header>
+					<h1>Good <i class="icon-file-css"></i> Qualities</h1>
+				</header>
+				<ul>
+					<li>All values are variables <i class="icon-arrow-right"></i> can be configured</li>
+					<li><code>em</code> units, where fixed widths are required</li>
+					<li><code>min-width</code> and <code>max-width</code> properties over <code>width</code></li>
+					<li>Modular design <i class="icon-arrow-right"></i> low coupling of components</li>
+					<li>Unitless measurements where possible: <code>line-height</code></li>
+					<li>Optimized code re-use through mixins</li>
+					<li>Proper preprocessor usage of nested selectors</li>
+					<li>Light and usable as a <strong>starting point</strong></li>
+					<li>Default variable values, set on simple options</li>
+					<li>Consistent naming scheme (CamelCase, CamelHumps, etc.), with limited variable shadowing</li>
+				</ul>
+				<footer>
+					<p>*<strong>Bootstrap has none of these!</strong></p>
+				</footer>
+			</section>
+			<section id = "sass-boilerplate-generator" data-x = "10500" data-z = "-4000" data-y = "2000" data-rotate =
+					"35" class =	"slide">
+				<header>
+					<h1>Introducing the SASS Boilerplate</h1>
+				</header>
+				<p><a href = "https://github.com/srsgores/sass-boilerplate" target = "_blank">View it on GitHub <i class="icon-github"></i></a></p>
+				<pre><code>npm install -g generator-sass-boilerplate</code></pre>
+				<pre><code>yo sass-boilerplate</code></pre>
+				<p>Enter your creds</p>
+			</section>
+			<section id = "less-boilerplate" data-x = "10500" data-z = "-2000" data-y = "2000" data-scale = "1.6" class =
+					"slide">
+				<header>
+					<h1>LESS Boilerplate</h1>
+				</header>
+				<p><a href = "https://github.com/srsgores/less-boilerplate" target = "_blank">View the repo on
+					GitHub <i class="icon-github"></i></a></p>
+			</section>
+			<section id = "roots" data-x = "12500" data-z = "-2500" data-y = "2000" data-scale = "1.1" class = "slide">
+				<header>
+					<h1>Roots (Stylus)</h1>
+				</header>
+				<p><a href = "http://roots.cx/" target = "_blank">Check out Roots on GitHub <i class="icon-github"></i></a></p>
+			</section>
+			<section id = "questions" data-x = "13500" data-z = "-3300" data-y = "2000" data-scale = "1" data-rotate = "240" class = "slide">
+				<header>
+					<h1>Questions<i class = "icon-question-sign full-icon"></i></h1>
+				</header>
+			</section>
+			<section id = "thanks" data-x = "12500" data-z = "-3300" data-y = "4000" data-scale = "1" data-rotate = "360" class = "slide">
+				<header>
+					<h1>Thanks<i class = "icon-heart full-icon"></i></h1>
+				</header>
+			</section>
+			</section>
+		</article>
+		</div>
+</div>
+<script src = "js/jquery.js"></script>
+<script src = "js/jquery.migrate.min.js"></script>
+<script src = "js/jmpress.js"></script>
+<script src = "js/typewriter.js"></script>
+<script src = "https://cdn.firebase.com/v0/firebase.js"></script>
+<script src = "//cdn.jsdelivr.net/codemirror/3.14.0/codemirror.js"></script>
+<script src = "js/firepad-min.js"></script>
+<script src = "js/main.js"></script>
+</body>

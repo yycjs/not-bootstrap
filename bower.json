@@ -1,0 +1,13 @@
+{
+	"name": "modern-frontend-presentation",
+	"version": "1.0.0",
+	"main": "app.js",
+	"dependencies": {
+		"jquery": "*",
+		"modernizr": "*",
+		"jmpress": "*"
+	},
+	"ignore": [
+		"**/.*"
+	]
+}
