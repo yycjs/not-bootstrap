@@ -75,7 +75,6 @@ jQuery(document).ready(function ($)
 	function initFirepad(elem, url) {
 
 		firepadRef = new Firebase(url);
-		console.log("Calling initFirepad on element" + elem + " and url" + url);
 		// Create CodeMirror (with line numbers and the JavaScript mode).
 		var codeMirror = CodeMirror(elem[0], {
 			lineNumbers: true,
